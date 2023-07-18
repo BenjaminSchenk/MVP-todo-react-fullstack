@@ -3,7 +3,7 @@ const cors = require('cors');
 const { Pool } = require('pg')
 const app = express()
 const PORT = process.env.PORT
-
+const path = require()
 
 
 const pool = new Pool ({
@@ -16,8 +16,8 @@ app.use(express.json())
 
 app.get('/todos', async (req, res) => {
     try {
-        const res = await pool.query('SELECT * FROM todos')
-        res.status(200).send(res.rows)
+        const result = await pool.query('SELECT * FROM todos')
+        res.status(200).send(result.rows)
     } catch (err) {
         console.error(err)
         res.status.send('Internal server error.')
