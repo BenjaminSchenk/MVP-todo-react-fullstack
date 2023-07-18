@@ -3,15 +3,13 @@ const cors = require('cors');
 const { Pool } = require('pg')
 const app = express()
 const PORT = process.env.PORT
-const path = require('path');
+
 
 
 const pool = new Pool ({
     connectionString: process.env.DATABASE_URL
 })
 
-const publicFolderPath = path.join(__dirname, 'client', 'public');
-app.use(express.static(publicFolderPath));
 app.use(cors())
 app.use(express.json())
 
