@@ -23,7 +23,7 @@ function App() {
     ) : (
       <>
       <Newtodo />
-      <Todolist />
+      <Todolist todos={todos}/>
       </>
     )}
   </>
