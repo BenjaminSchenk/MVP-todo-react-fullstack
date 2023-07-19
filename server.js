@@ -7,7 +7,7 @@ const path = require('path')
 const dotenv = require('dotenv')
 dotenv.config()
 
-const publicFolderPath = path.join(__dirname, 'client', 'public');
+const publicFolderPath = path.join(__dirname, 'client', 'build');
 app.use(express.static(publicFolderPath));
 
 const pool = new Pool ({
