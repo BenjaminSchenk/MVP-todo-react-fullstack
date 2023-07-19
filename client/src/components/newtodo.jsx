@@ -13,7 +13,7 @@ const Newtodo = () => {
         }
         e.preventDefault()
         try {
-        fetch('https://todo-list-ben.onrender.com/todos', {
+        await fetch('https://todo-list-ben.onrender.com/todos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
