@@ -18,15 +18,7 @@ function App() {
   return ( 
     <>
     <h1>test</h1>
-    <Header />
-    {todos.length === 0 ? (
-      <Loading />
-    ) : (
-      <>
-      <Newtodo />
-      <Todolist />
-      </>
-    )}
+
   </>
   );
 }
