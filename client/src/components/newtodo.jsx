@@ -12,14 +12,16 @@ const Newtodo = () => {
             item: newItem,
         }
         e.preventDefault()
+        try {
         fetch('https://todo-list-ben.onrender.com/todos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(obj)
-        }); setNewitem('')
-
+        })}  catch (err) {
+            console.error(err);
+        } setNewitem('')
     }
 
     return (
