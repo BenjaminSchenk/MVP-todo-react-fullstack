@@ -13,13 +13,22 @@ const Newtodo = () => {
         }
         e.preventDefault()
         try {
-        await fetch('https://todo-list-ben.onrender.com/todos', {
+        const response = await fetch('https://todo-list-ben.onrender.com/todos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(obj)
-        })}  catch (err) {
+            
+        }); if (!response.ok) {
+            // Handle non-2xx responses (e.g., server error)
+            console.error('Server returned an error:', response.statusText);
+            return;
+        }
+
+        // The request was successful, you can log or process the response if needed
+        console.log('Response:', await response.json());
+    }  catch (err) {
             console.error(err);
         } setNewitem('')
     }
