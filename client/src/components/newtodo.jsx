@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Newtodo = () => {
     const [newItem, setNewitem] = useState('')
@@ -7,7 +7,7 @@ const Newtodo = () => {
         setNewitem(e.target.value)
     }
 
-    const submitRespomse = (e) => {
+    const submitRespomse = async (e) => {
         const obj = {
             item: newItem,
         }
