@@ -1,3 +1,13 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
 h1 {
-    color: red;
+    color: lightsalmon;
+    left: center;
+}
+
+.items {
+    color: lightsalmon;
+
 }

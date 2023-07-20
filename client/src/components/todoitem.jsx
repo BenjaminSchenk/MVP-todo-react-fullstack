@@ -21,7 +21,7 @@ const toggleEdit = () => {
     <div className="containers" >
     {editMode ? <Edit todo={todo} /> : 
     <>
-    <p>{todo.item}</p>
+    <p className='items'>{todo.item}</p>
     <button onClick={toggleEdit}>Edit</button>
     <button onClick={(e) => dele(e, todo.id)}>delete</button>
     </>
