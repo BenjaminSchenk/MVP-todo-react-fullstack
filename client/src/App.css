@@ -9,10 +9,12 @@ h1 {
 
 .items {
     color: lightsalmon;
+    
 }
 
 .containers {
     margin-left: 48%;
+    outline: 2px solid lightblue;
 }
 
 #new {
