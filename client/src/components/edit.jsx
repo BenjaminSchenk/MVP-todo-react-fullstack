@@ -28,7 +28,7 @@ const Edit = ({todo}) => {
         <div id="update">
             <form>
                 <input type="text" value={input} onChange={(e) => setItem(e)}/>
-                <input type="submit" value="submit" onSubmit={(e) => updatedItem(e)}/>
+                <input type="submit" value="Update" onSubmit={(e) => updatedItem(e)}/>
             </form>
         </div>
     )
