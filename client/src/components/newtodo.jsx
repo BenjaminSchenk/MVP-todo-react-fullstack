@@ -19,18 +19,19 @@ const Newtodo = () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(obj)
-            
+           
         });
     }  catch (err) {
             console.error(err);
         } setNewitem('')
+        window.location.reload();
     }
 
     return (
         <>
-        <form>
+        <form onSubmit={(e) => { submitRespomse(e) }}>
         <input id="new"value={newItem} required onChange={(e) => recordResponse(e)}></input>
-        <input id="sub" type="submit" value="New" onSubmit={(e) => { submitRespomse(e) }}></input>
+        <input id="sub" type="submit" value="New"></input>
         </form>
         </>
     )

@@ -56,7 +56,7 @@ app.post('/todos', async (req, res) => {
 
 app.put('/todos/:id', async (req, res) => {
     const { id } = req.params
-    const { itam } = req.body
+    const { item } = req.body
     try {
         const result = await pool.query('UPDATE todos SET item = $1 WHERE id = $2', [item, id])
         res.status(201).send('Todo updated.')
