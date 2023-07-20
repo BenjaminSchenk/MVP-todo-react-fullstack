@@ -4,10 +4,13 @@ body {
 
 h1 {
     color: lightsalmon;
-    left: center;
+    text-align: center;
 }
 
 .items {
     color: lightsalmon;
+}
 
+.containers {
+    left: 100%;
 }
