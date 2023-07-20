@@ -10,7 +10,7 @@ const Edit = ({todo}) => {
     const updatedItem = async (e) => {
         e.preventDefault()
         const obj = {
-            item: input
+            item: input,
         }
         try {
              await fetch(`https://todo-list-ben.onrender.com/todos/${todo.id}`, {
@@ -22,7 +22,7 @@ const Edit = ({todo}) => {
             });
         } catch (error) {
             console.error(error);
-          }
+          } window.location.reload();
 }
     return (
         <div id="update">
