@@ -12,5 +12,10 @@ h1 {
 }
 
 .containers {
-    left: 100%;
+    margin-left: 48%;
+}
+
+#new {
+    margin-left: 50%;
+    display: flexbox;
 }

@@ -29,10 +29,12 @@ const Newtodo = () => {
 
     return (
         <>
+        <div id='new'>
         <form onSubmit={(e) => { submitRespomse(e) }}>
         <input id="new"value={newItem} required onChange={(e) => recordResponse(e)}></input>
         <input id="sub" type="submit" value="New"></input>
         </form>
+        </div>
         </>
     )
 }
