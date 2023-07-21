@@ -27,4 +27,7 @@ h1 {
 #new {
     margin-left: 50%;
     display: flexbox;
+    border: none;
+    outline: none;
+    border-bottom: 1 px solid black;
 }
